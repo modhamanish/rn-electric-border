@@ -56,18 +56,72 @@ cd ios && pod install
 ## Usage
 
 ```tsx
-import ElectricBorder from "@modhamanish/rn-electric-border";
-import { View, Text } from "react-native";
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import ElectricBorder from '@modhamanish/rn-electric-border';
 
 const App = () => {
   return (
-    <ElectricBorder>
-      <View style={{ alignItems: "center" }}>
-        <Text style={{ color: "#fff" }}>Electric!</Text>
-      </View>
-    </ElectricBorder>
+    <View style={styles.container}>
+      <ElectricBorder
+        borderRadius={10}
+        speed={0.5}
+        chaos={0.5}
+        strokeWidth={1.2}
+      >
+        <View style={styles.card}>
+          <Text style={[styles.text, styles.blueGlow]}>Electric Border</Text>
+        </View>
+      </ElectricBorder>
+
+      <ElectricBorder
+        borderRadius={10}
+        speed={0.5}
+        chaos={0.5}
+        strokeWidth={1.2}
+        color="#FF0000"
+      >
+        <View style={styles.card}>
+          <Text style={[styles.text, styles.redGlow]}>Electric Border</Text>
+        </View>
+      </ElectricBorder>
+    </View>
   );
 };
+
+export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 20,
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: '#121212',
+    gap: 40,
+  },
+  card: {
+    paddingHorizontal: 20,
+    paddingVertical: 30,
+    borderWidth: 1.5,
+    borderColor: '#FFFFFF',
+    borderRadius: 10,
+  },
+  text: {
+    color: '#FFFFFF',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 1,
+    shadowRadius: 10,
+    fontWeight: 'bold',
+    fontSize: 40,
+    textAlign: 'center',
+  },
+  blueGlow: {
+    shadowColor: '#00AEFF',
+  },
+  redGlow: {
+    shadowColor: '#FF0000',
+  },
+});
 ```
 
 ## Props
