@@ -1,0 +1,86 @@
+# @modhamanish/rn-electric-border
+
+A React Native component that renders an animated electric/neon glowing border effect around any view. Built with `@shopify/react-native-skia` and `react-native-reanimated`.
+
+## Features
+
+- Animated electric/neon border with glow effect
+- Customizable border color, speed, chaos, and border radius
+- Works with any child content
+- Smooth 60fps animation using Reanimated worklets
+- Multi-layered glow effect using Skia blur filters
+
+## Installation
+
+### Step 1: Install the package
+
+```bash
+npm install @modhamanish/rn-electric-border
+# or
+yarn add @modhamanish/rn-electric-border
+```
+
+### Step 2: Install peer dependencies
+
+This package requires the following peer dependencies. Make sure they are installed in your project:
+
+```bash
+npm install @shopify/react-native-skia react-native-reanimated
+# or
+yarn add @shopify/react-native-skia react-native-reanimated
+```
+
+> **Note:** `react` and `react-native` are also required but should already be installed in your React Native project.
+
+### Step 3: Additional setup
+
+- **react-native-reanimated** requires adding the Babel plugin. Add this to your `babel.config.js`:
+
+```js
+module.exports = {
+  presets: ['module:@react-native/babel-preset'],
+  plugins: ['react-native-reanimated/plugin'],
+};
+```
+
+- **@shopify/react-native-skia** may require additional native setup. Follow the [official Skia installation guide](https://shopify.github.io/react-native-skia/docs/getting-started/installation).
+
+### iOS
+
+After installing, run:
+
+```bash
+cd ios && pod install
+```
+
+## Usage
+
+```tsx
+import ElectricBorder from "@modhamanish/rn-electric-border";
+import { View, Text } from "react-native";
+
+const App = () => {
+  return (
+    <ElectricBorder>
+      <View style={{ alignItems: "center" }}>
+        <Text style={{ color: "#fff" }}>Electric!</Text>
+      </View>
+    </ElectricBorder>
+  );
+};
+```
+
+## Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `children` | `React.ReactNode` | **required** | Content to wrap with the electric border |
+| `borderRadius` | `number` | `12` | Border radius of the container |
+| `color` | `string` | `"#7df9ff"` | Color of the electric glow effect |
+| `speed` | `number` | `0.5` | Animation speed multiplier |
+| `chaos` | `number` | `0.5` | Intensity of the electric noise effect |
+| `containerStyle` | `ViewStyle` | `undefined` | Additional styles for the outer container |
+
+## License
+
+ISC

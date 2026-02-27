@@ -1,0 +1,56 @@
+{
+  "name": "@modhamanish/rn-electric-border",
+  "version": "1.0.0",
+  "description": "A React Native Electric Border component with animated glowing neon border effect using Skia and Reanimated.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modhamanish/rn-electric-border.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "electric-border",
+    "neon-border",
+    "glow-effect",
+    "animated-border",
+    "skia",
+    "react-native-skia",
+    "reanimated",
+    "react-native-reanimated",
+    "border-animation",
+    "electric-effect",
+    "neon-glow",
+    "ui-component",
+    "canvas",
+    "noise",
+    "lightning-effect"
+  ],
+  "author": "Modha Manish",
+  "license": "ISC",
+  "files": [
+    "src",
+    "index.js",
+    "index.d.ts"
+  ],
+  "bugs": {
+    "url": "https://github.com/modhamanish/rn-electric-border/issues"
+  },
+  "homepage": "https://github.com/modhamanish/rn-electric-border#readme",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.71.0",
+    "@shopify/react-native-skia": ">=0.1.0",
+    "react-native-reanimated": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-native": "^0.72.8",
+    "typescript": "^5.9.3"
+  }
+}
