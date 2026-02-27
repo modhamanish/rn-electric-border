@@ -14,6 +14,7 @@ interface ElectricBorderProps {
   speed?: number;
   chaos?: number;
   containerStyle?: ViewStyle;
+  strokeWidth?: number;
 }
 
 const ElectricBorder: React.FC<ElectricBorderProps> = ({
@@ -23,6 +24,7 @@ const ElectricBorder: React.FC<ElectricBorderProps> = ({
   speed = 0.5,
   chaos = 0.5,
   containerStyle,
+  strokeWidth = 1,
 }) => {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const time = useSharedValue(0);
@@ -257,13 +259,28 @@ const ElectricBorder: React.FC<ElectricBorderProps> = ({
       >
         <Group>
           <Blur blur={6} />
-          <Path path={path} color={color} style="stroke" strokeWidth={4} />
+          <Path
+            path={path}
+            color={color}
+            style="stroke"
+            strokeWidth={strokeWidth * 4}
+          />
         </Group>
         <Group>
           <Blur blur={2} />
-          <Path path={path} color={color} style="stroke" strokeWidth={2} />
+          <Path
+            path={path}
+            color={color}
+            style="stroke"
+            strokeWidth={strokeWidth * 2}
+          />
         </Group>
-        <Path path={path} color="#fff" style="stroke" strokeWidth={1} />
+        <Path
+          path={path}
+          color="#fff"
+          style="stroke"
+          strokeWidth={strokeWidth}
+        />
       </Canvas>
     </View>
   );

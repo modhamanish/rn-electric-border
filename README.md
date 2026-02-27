@@ -79,6 +79,7 @@ const App = () => {
 | `color` | `string` | `"#7df9ff"` | Color of the electric glow effect |
 | `speed` | `number` | `0.5` | Animation speed multiplier |
 | `chaos` | `number` | `0.5` | Intensity of the electric noise effect |
+| `strokeWidth` | `number` | `1` | Width of the electric border stroke |
 | `containerStyle` | `ViewStyle` | `undefined` | Additional styles for the outer container |
 
 ## License
