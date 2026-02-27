@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffmpeg -i /Users/jaypoojara/Desktop/manish/rn-electric-border/demo/electric-border.mp4 -vf \"fps=15,scale=300:-1:flags=lanczos\" -loop 0 /Users/jaypoojara/Desktop/manish/rn-electric-border/demo/electric-border.gif)"
+    ]
+  }
+}

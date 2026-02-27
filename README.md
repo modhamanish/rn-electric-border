@@ -12,7 +12,7 @@ A React Native component that renders an animated electric/neon glowing border e
 
 ## Demo
 
-<video src="demo/electric-border.mp4" width="300" /></video>
+<img src="demo/electric-border.gif" width="300" alt="Electric Border Demo" />
 
 ## Installation
 
