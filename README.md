@@ -76,7 +76,7 @@ const App = () => {
 |------|------|---------|-------------|
 | `children` | `React.ReactNode` | **required** | Content to wrap with the electric border |
 | `borderRadius` | `number` | `12` | Border radius of the container |
-| `color` | `string` | `"#7df9ff"` | Color of the electric glow effect |
+| `color` | `string` | `"#00AEFF"` | Color of the electric glow effect |
 | `speed` | `number` | `0.5` | Animation speed multiplier |
 | `chaos` | `number` | `0.5` | Intensity of the electric noise effect |
 | `strokeWidth` | `number` | `1` | Width of the electric border stroke |
