@@ -10,6 +10,10 @@ A React Native component that renders an animated electric/neon glowing border e
 - Smooth 60fps animation using Reanimated worklets
 - Multi-layered glow effect using Skia blur filters
 
+## Demo
+
+<video src="demo/electric-border.mp4" width="300" /></video>
+
 ## Installation
 
 ### Step 1: Install the package
